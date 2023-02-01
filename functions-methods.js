@@ -99,7 +99,7 @@ function checkEmailValidity(email) {
   const domain = email;
   // console.log(domain);
 
-  // gestript email adres na @ teken ivm check op aanwezigheid .nl of .com of .info - niet op vaste positie ivm diverse domeinen.
+  // gestript email adres na @ teken ivm check op aanwezigheid .nl of .com of .info - niet op vaste positie ivm diverse domeinen. Als er een punt voor de @ wordt gebruikt wordt deze nu genegeerd.
  
   const emailStripped = domain.substring(domain.indexOf("@") + 1);
   // console.log(emailStripped);
