@@ -103,26 +103,32 @@ function checkEmailValidity(email) {
  
   const emailStripped = domain.substring(domain.indexOf("@") + 1);
   // console.log(emailStripped);
-  let message = "";
+  // let message = "";
 
-  if (domain.charAt(domain.indexOf("@")) !== "@" || 
-      domain.charAt(domain.indexOf(",")) === ",")  {
+  // if (domain.charAt(domain.indexOf("@")) !== "@" || 
+  //     domain.charAt(domain.indexOf(",")) === ",")  {
     
-    message = "false";
+  //   message = "false";
 
-  } else if (domain.endsWith(".") ||
-             emailStripped.charAt(emailStripped.indexOf(".")) !== ".") {
+  // } else if (domain.endsWith(".") ||
+  //            emailStripped.charAt(emailStripped.indexOf(".")) !== ".") {
     
-    message = "false";
+  //   message = "false";
     
 
-  }  else {
+  // }  else {
 
-    message = "true";
+  //   message = "true";
 
-  }
+  // }
 
-  return message;
+  // return message;
+  
+  // Simplefied version
+
+  return domain.includes("@") && !domain.includes(",") && !domain.endsWith(".") && emailStripped.includes(".");
+
+  
 
 }
 

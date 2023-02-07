@@ -165,9 +165,6 @@ console.log(outcomeFunction);
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-
-
-
 /* Bonusopdracht: hoogste cijfer */
 
 /* 3a: Script schrijven  */
